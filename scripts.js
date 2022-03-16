@@ -5,14 +5,8 @@ navigator.mediaDevices.getUserMedia({
     document.getElementById('vid').srcObject = stream;
 })
 
-/*
- width:{
-            min:640,
-            max:1280    
-        },
-        height:{
-            min: 480,
-            max: 720
-        },
-        frameRate: 1
-*/
+    document.getElementById('myButton').onclick = function(){
+    var myMessage = document.getElementById('myText').value;
+    console.log(myMessage)
+    document.getElementById("demo").innerHTML = myMessage;
+    }
